@@ -37,8 +37,7 @@ class Room:
         # Cargar imágenes para botones
         self.imgs = []  # Lista para mantener las referencias
         img_files = [
-            "1.png", "2.png", "3.png",
-            "4.png", "5.png", "5.png"
+            "1.png", "2.png", "3.png", "5.png"
         ]
 
         for img_file in img_files:
@@ -51,27 +50,27 @@ class Room:
                 self.imgs.append(None)
 
         # Crear botones con imágenes
-        self.boton1 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 1"
+        self.boton1 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 1"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.abrir_emergente)
         self.boton1.place(x=400, y=50)
 
-        self.boton2 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 1"
+        self.boton2 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 1"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.abrir_emergente1)
         self.boton2.place(x=425, y=550)
 
-        self.boton3 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 2"
+        self.boton3 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 2"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.abrir_emergente2)
         self.boton3.place(x=150, y=200)
 
-        self.boton4 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 3"
+        self.boton4 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 3"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.tv)
         self.boton4.place(x=600, y=270)
 
-        self.boton5 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 4"
+        self.boton5 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 4"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.mueble)
         self.boton5.place(x=10, y=500)
 
-        self.boton6 = tk.Button(self.ventana, image=self.imgs[5], compound="top", # - - - , text="enigma 5"
+        self.boton6 = tk.Button(self.ventana, image=self.imgs[3], compound="top", # - - - , text="enigma 5"
                                 font=("Arial", 12), bg="white", fg="black", width=10, height=10, command=self.puerta)
         self.boton6.place(x=350, y=270)
 
