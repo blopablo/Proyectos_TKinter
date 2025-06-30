@@ -8,7 +8,7 @@ class Room:
 
         pygame.mixer.init()
         pygame.mixer.music.load("sound/fondo.mp3")
-        pygame.mixer.music.get_volume()
+        pygame.mixer.music.set_volume(0.5)
         pygame.mixer.music.play(-1)
 
         self.sonido_click = pygame.mixer.Sound("sound/susurro.mp3",)
@@ -260,7 +260,7 @@ class Room:
         entry_contraseña1 = tk.Entry(emergente4, font=("Arial", 14), width=5, bg="black", fg="red")
         entry_contraseña1.place(x=370, y=730)
 
-        self.boton7 = tk.Button(emergente4, image=self.imgs[5], compound="top", command=self.cajon,
+        self.boton7 = tk.Button(emergente4, image=self.imgs[3], compound="top", command=self.cajon,
                                 font=("Arial", 12), bg="white", fg="black", width=20, height=20)
         self.boton7.place(x=390, y=490)
 
